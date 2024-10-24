@@ -104,11 +104,18 @@ public:
         ATTRIBUTE_MAP immutable_data
     );
 
+    ACTION deltemplate(
+        name authorized_editor,
+        name collection_name,
+        int32_t template_id
+    );
+    
     ACTION locktemplate(
         name authorized_editor,
         name collection_name,
         int32_t template_id
     );
+<<<<<<< HEAD
     
     ACTION redtemplmax(
         name authorized_editor,
@@ -116,6 +123,8 @@ public:
         int32_t template_id,
         uint32_t new_max_supply
     );
+=======
+>>>>>>> dev-feature-2
 
     ACTION mintasset(
         name authorized_minter,
